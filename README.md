@@ -1,24 +1,31 @@
-# README
+Telegram bot can ask you for your name, email, event date and description. At the specified time, the bot will send you a notification in the direct messages and by email.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Ruby 2.4.2
 
-* Ruby version
+Rails 5
 
-* System dependencies
 
-* Configuration
+Find in telegram @ReminderEventsBot
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+**Start bot**
 
-* Services (job queues, cache servers, search engines, etc.)
+Enter your credentials in telegram TOKEN, email and email pass
 
-* Deployment instructions
+Run:
+```
+bundle
+ruby telegram/bot.rb
+```
 
-* ...
+
+
+**Avaliable commands**
+
+/user - bot will ask your for your name and email
+
+/event - bot will ask your for your event date and description
+
+/events - All events list
