@@ -2,11 +2,11 @@ require File.expand_path('../config/environment', __dir__)
 require 'telegram/bot'
 require 'pony'
 
-my_mail = 'vadim.volovenko@gmail.com'
-password = "12SPOrter@!@!"
+my_mail = 'your_mail'
+password = "your email pass"
 subject = "Напоминание о событии"
 
-TOKEN = "1398645931:AAEhVwDb7IYuXso6A48c3jQ5ntqm5nbTWa4"
+TOKEN = "telegramtoken"
 
 Telegram::Bot::Client.run(TOKEN) do |bot|
   bot.listen do |message|
@@ -33,6 +33,7 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
       user.step = "text"
       user.save
       bot.api.send_message(chat_id: message.chat.id, text: "Напиши описания события")
+
     when "text"
       new_event = user.events.last
       new_event.text = message.text
@@ -65,6 +66,7 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
       user.step = "name"
       user.save
       bot.api.send_message(chat_id: message.chat.id, text: "Напиши свое имя")
+
     when "/event"
       user.step = "date"
       user.save
