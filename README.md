@@ -6,7 +6,7 @@ Ruby 2.4.2
 Rails 5
 
 
-Find in telegram @ReminderEventsBot
+Find in telegram @EventRemind_bot
 
 
 
