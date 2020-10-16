@@ -12,7 +12,6 @@ default: &default
 development:
   adapter: postgresql
   host: localhost
-  username: user
   database: telegram_dev
 
 # Warning: The database defined as "test" will be erased and
