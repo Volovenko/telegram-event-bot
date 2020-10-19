@@ -24,7 +24,7 @@ ruby telegram/bot.rb
 
 **Avaliable commands**
 
-/user - bot will ask your for your name and email
+/start - bot will ask your for your name and email
 
 /event - bot will ask your for your event date and description
 
